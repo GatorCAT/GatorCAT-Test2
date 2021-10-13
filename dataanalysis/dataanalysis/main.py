@@ -37,17 +37,26 @@ def main(
         console.print(":rocket: Let's do some sophisticated data analysis!")
         # transform the data from a list of textual values to a list of numerical values
         data_list = transform.transform_string_to_number_list(data_text)
-        # TODO: compute the mean from the list of numerical values
+        # compute the mean from the list of numerical values
+        mean = "{:.2f}".format(summarize.compute_mean(data_list))
         console.print("")
         console.print(":abacus: Here are the results of the data analysis:")
-        # TODO: display the computed mean in the terminal window
-        # TODO: compute the median from the list of numerical values
-        # TODO: display the computed median in the terminal window
-        # TODO: compute the variance from the list of numerical values
-        # TODO: display the computed variance in the terminal window
-        # TODO: compute the standard deviation from the list of numerical values
-        # TODO: display the computed standard deviation in the terminal window
-        # TODO: make sure that you display all floating-point numbers with
+        # display the computed mean in the terminal window
+        console.print(f"\tThe computed mean is {mean}")
+        # compute the median from the list of numerical values
+        median = "{:.2f}".format(summarize.compute_median(data_list))
+        # display the computed median in the terminal window
+        console.print(f"\tThe computed median is {median}")
+        # compute the variance from the list of numerical values
+        console.print()
+        variance = "{:.2f}".format(summarize.compute_variance(data_list))
+        # display the computed variance in the terminal window
+        console.print(f"\tThe computed variance is {variance}")
+        # compute the standard deviation from the list of numerical values
+        std = "{:.2f}".format(summarize.compute_standard_deviation(data_list))
+        # display the computed standard deviation in the terminal window
+        console.print(f"\tThe computed standard deviation is {std}")
+        # make sure that you display all floating-point numbers with
         # exactly two decimal places (see the expected output for details)
         console.print("")
         console.print(
