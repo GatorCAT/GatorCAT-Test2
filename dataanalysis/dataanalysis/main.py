@@ -40,7 +40,7 @@ def main(
         # compute the mean from the list of numerical values
         mean = "{:.2f}".format(summarize.compute_mean(data_list))
         console.print("")
-        console.print(":abacus: Here are the results of the data analysis:")
+        console.print(":abacus: Here are the results of the data analysis:\n")
         # display the computed mean in the terminal window
         console.print(f"\tThe computed mean is {mean}")
         # compute the median from the list of numerical values

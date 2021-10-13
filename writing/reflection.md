@@ -1,8 +1,6 @@
 # Data Analysis
 
-TODO: PLEASE DELETE ALL OF THE TODO MARKERS AND THE ASSOCIATED PROMPTS
-
-## Add Your Name Here
+## Wesley Long
 
 ## Program Input and Output
 
